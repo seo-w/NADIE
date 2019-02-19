@@ -24,8 +24,21 @@ body{
 	background-color: $negro;
 	color:	$griz;
 
+	::selection {
+	  color: $negro; 
+	  background: $amarillo;
+	}
+
 	.amarillo{
 		color: $amarillo;
+	}
+	.verde{
+		color:$verde;
+	}
+	.resaltado{
+		background-color:$verde;
+		color: $negro;
+		    margin-right: 5px;
 	}
 	.progress{
 		border: 2px solid;
@@ -40,7 +53,11 @@ body{
 		}
 	}
 	fieldset {
-	    border: 2px dashed;
+	    border-top: 2px dashed;
+	    border-bottom: 2px dashed;
+	    background: url(../img/linea-vertical-quienes-somos-16.svg), url(../img/linea-vertical-quienes-somos-16.svg);
+    	background-position: left top, right top;
+    	background-repeat-x: no-repeat;
 	    /* padding: 3em; */
 	    legend {
 		    text-align: center;
@@ -67,7 +84,57 @@ body{
 		}
 		.redes{
 			margin-top: 4%;
+			img {
+			    max-height: 25px;
+			    padding: 0 4px;
+			}
 		}
+		
 	}
 	
 } // fin navegacion
+
+section.warning {
+    background-color: #fff;
+    margin-top: 10em;
+    background-image: url(../img/negro-bg.svg),url(../img/negro-bg2.svg);
+    background-position: center left,48vw 1vh;
+    -webkit-background-size: 59% 58%,96% 89%;
+    background-size: 59% 58%,96% 89%;
+    background-repeat: no-repeat;
+    .negativo{
+    	margin-top: -6em;
+    }
+    img.somos{
+    	position:relative;
+    	z-index: 1;
+    }
+   /* img.textura {
+		width: 100%;
+	    /* height: 300px; */
+	   /* position: relative;
+	    bottom: -450px;
+	    left: -60px;*/
+	    /*z-index: -1;*/
+	/*}*/
+	.imagen:after {
+	    content: "";
+	    
+	    background: url(../img/textura-pixel.svg);
+	    display: block;
+	    position: relative;
+	    width: 100%;
+	    height: 130px;
+	    bottom: 60px;
+	    left: -60px;
+
+	}
+
+}//fin warning
+
+// media querys
+@media (min-width: 1200px){
+	.container-fluid {
+	    max-width: 1520px;
+	}
+}
