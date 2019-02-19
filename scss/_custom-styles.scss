@@ -126,7 +126,7 @@ body{
 		    margin-left: 10px;
 	    }
 	}
-}
+} //fin body - estilos generales
 
 .navegacion {
 	border:2px solid;
@@ -193,6 +193,16 @@ section.warning {
 	}
 
 }//fin warning
+
+section.reel{
+	background-color:#fff;
+
+	.recuadro {
+	   background: url(../img/fondo-video.png);
+    	background-size: cover;
+	}
+
+} //fin reel
 
 // media querys
 @media (min-width: 1200px){
