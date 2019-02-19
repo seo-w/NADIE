@@ -35,6 +35,9 @@ body{
 	.verde{
 		color:$verde;
 	}
+	.azul{
+		color: $azul;
+	}
 	.resaltado{
 		background-color:$verde;
 		color: $negro;
@@ -63,6 +66,65 @@ body{
 		    text-align: center;
 		    width: 20%;
 		}
+	}
+	.nombre-team{
+		left: -25%;
+	    display: block;
+	    position: relative;
+	    top: -15%;
+	    z-index: 2;
+	    background-color: #000;
+	    width: fit-content;
+	    padding: 0 10px 0 0;
+
+		hr{
+			float: left;
+		    width: 104px;
+		    border: 1px dashed;
+		    margin-top: 11px;
+		    margin-right: 10px;
+	    }
+	}
+	.nombre-team2{
+		left: -25%;
+	    display: block;
+	    position: relative;
+	    top: -6%;
+	    z-index: 2;
+	    background-color: #000;
+	    width: -webkit-fit-content;
+	    width: -moz-fit-content;
+	    width: fit-content;
+	    padding: 0 10px 0 0;
+
+		hr{
+			float: left;
+		    width: 104px;
+		    border: 1px dashed;
+		    margin-top: 11px;
+		    margin-right: 10px;
+	    }
+	}
+	.nombre-team3{
+		    right: -35%;
+		    display: inline-block;
+		    position: relative;
+		    bottom: 33vh;
+
+		    z-index: 2;
+		    background-color: #000;
+		    width: -webkit-fit-content;
+		    width: -moz-fit-content;
+		    width: fit-content;
+		    padding: 0 0px 0px 10px;
+
+		hr{
+			float: right;
+		    width: 104px;
+		    border: 1px dashed;
+		    margin-top: 11px;
+		    margin-left: 10px;
+	    }
 	}
 }
 
