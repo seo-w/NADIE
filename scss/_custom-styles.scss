@@ -199,7 +199,19 @@ section.reel{
 
 	.recuadro {
 	   background: url(../img/fondo-video.png);
-    	background-size: cover;
+    	background-size: 100% 100%;
+    	background-repeat: no-repeat;
+
+    	.video-bar {
+		    border: 1px solid #000;
+
+		    p.progres {
+			    background-image: url(../img/textura-02.png);
+			    width: 95%;
+			    height: 20px;
+			    background-size: contain;	
+			}
+		}
 	}
 
 } //fin reel
