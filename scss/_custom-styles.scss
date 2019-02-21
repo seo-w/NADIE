@@ -137,8 +137,15 @@ body{
 		    @media screen and (max-width: 991px){
 			    bottom: 21vh;
 		    }
+		    @media screen and (max-width: 768px){
+		    	right: -38%;
+    			bottom: 218px;
+		    }
 		    @media screen and (max-width: 610px){
 		    	right: -23%;
+		    }
+		    @media screen and (max-width: 414px){
+		    	right: -3%;
 		    }
 
 		hr{
@@ -214,6 +221,10 @@ section.warning {
     	background-size: 86% 50%,86% 80%;
     	    background-position: -2% 12%, 100% 96%;
     }
+    @media screen and (max-width: 768px){
+	    background-size: 86% 50%,93% 69%;
+	    background-position: 0% 3%,100% 94%;
+    }
     .negativo{
     	margin-top: -6em;
     }
@@ -272,6 +283,9 @@ section.hace{
 	.col-central{
 		border-left:4px double;
 		border-right:4px double;
+		@media screen and (max-width: 768px){
+		    border:	4px double;
+		}
 	}
 	fieldset {
 	    border: 1px solid ;
@@ -288,6 +302,10 @@ section.hace{
 		    background-size: 100% 100%;
 		    max-width: 330px;
     		width: 330px;
+    		@media screen and (max-width: 320px){
+    			width: 288px;
+    		}
+
     		&:hover{
     			background-image: url(../img/img-ventana-seleccion.png);
     			.foot{
@@ -298,6 +316,9 @@ section.hace{
 
 		    .head{
 		    	height: 37px;
+		    	@media screen and (max-width: 320px){
+	    			height: 35px;
+	    		}
 		    	
 		    }
 		    .foot{
@@ -305,6 +326,9 @@ section.hace{
 			    height: 54px;
 			    color: #0600AF;
 			    font-size: 1.15em;
+				@media screen and (max-width: 320px){
+	    		    height: 47px;
+	    		}
 		    }
 	}
 	form {
@@ -356,7 +380,7 @@ footer{
 	 	li {
 	 		text-align: center;
 		    float: right;
-		    width: 87px;
+		    width: 83px;
 		    img{
 		    	height: 40px;
 			    width: 46px;
