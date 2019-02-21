@@ -86,6 +86,9 @@ body{
 	    background-color: #000;
 	    width: fit-content;
 	    padding: 0 10px 0 0;
+	    @media screen and (max-width: 991px){
+		    	left: -3%;
+		}
 
 		hr{
 			float: left;
@@ -106,6 +109,9 @@ body{
 	    width: -moz-fit-content;
 	    width: fit-content;
 	    padding: 0 10px 0 0;
+	    @media screen and (max-width: 991px){
+		    	left: -3%;
+		}
 
 		hr{
 			float: left;
@@ -127,6 +133,12 @@ body{
 		    width: -moz-fit-content;
 		    width: fit-content;
 		    padding: 0 0px 0px 10px;
+		    @media screen and (max-width: 991px){
+			    bottom: 21vh;
+		    }
+		    @media screen and (max-width: 610px){
+		    	right: -23%;
+		    }
 
 		hr{
 			float: right;
@@ -194,6 +206,9 @@ section.warning {
     -webkit-background-size: 70% 55%,96% 89%;
     background-size: 70% 55%,96% 89%;
     background-repeat: no-repeat;
+    @media screen and (max-width: 1024px){
+    	background-size: 70% 50%,96% 80%;
+    }
     .negativo{
     	margin-top: -6em;
     }
@@ -268,18 +283,65 @@ section.hace{
 		    background-size: 100% 100%;
 		    max-width: 330px;
     		width: 330px;
+    		&:hover{
+    			background-image: url(../img/img-ventana-seleccion.png);
+    			.foot{
+    				color:$negro;
+    			}
+    			
+    		}
 
 		    .head{
-		    	height: 39px;
+		    	height: 37px;
 		    	
 		    }
 		    .foot{
 		    	padding-top: 12px;
 			    height: 54px;
-			    
+			    color: #0600AF;
 			    font-size: 1.15em;
 		    }
+	}
+	form {
+	    border: 1px solid;
+
+	    p.titulo {
+		    border: 1px solid;
 		}
+		.cuerpo{
+			border: 1px solid;
+			input, textarea {
+			    background: none;
+			    border: none;
+			    color: $cafe;
+			    &::placeholder { color: $cafe; }
+			}
+			textarea{
+				height: 200px;
+				width: 100%;
+			}	
+			.mensaje{
+				padding-left:15px;
+				.titulo{
+					vertical-align: top;
+				}
+			}
+			.pie {
+			    width: 100%;
+			    hr {
+				    width: 90%;
+				    border: 1px dashed;
+				    float: left;
+				    margin-right: 10px;
+				}
+				input[type="button"] {
+					&:hover{
+					    color: $green;
+					}
+				}
+			}
+		}
+	}
 }
 
 // media querys
