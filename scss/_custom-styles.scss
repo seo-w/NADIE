@@ -122,10 +122,11 @@ body{
 	    }
 	}
 	.nombre-team3{
-		    right: -35%;
+		    right: -27%;
 		    display: inline-block;
 		    position: relative;
-		    bottom: 33vh;
+		    /*bottom: 33vh;*/
+		    bottom: 240px;
 
 		    z-index: 2;
 		    background-color: #000;
@@ -207,7 +208,11 @@ section.warning {
     background-size: 70% 55%,96% 89%;
     background-repeat: no-repeat;
     @media screen and (max-width: 1024px){
-    	background-size: 70% 50%,96% 80%;
+    	background-size: 86% 50%,96% 80%;
+    }
+    @media screen and (max-width: 991px){
+    	background-size: 86% 50%,86% 80%;
+    	    background-position: -2% 12%, 100% 96%;
     }
     .negativo{
     	margin-top: -6em;
@@ -342,7 +347,25 @@ section.hace{
 			}
 		}
 	}
-}
+}// fin hace
+
+footer{
+	background-color:#fff;
+	color: $black;
+	ul.redes{
+	 	li {
+	 		text-align: center;
+		    float: right;
+		    width: 87px;
+		    img{
+		    	height: 40px;
+			    width: 46px;
+			    object-fit: contain;
+			    margin-bottom: 10px;
+		    }
+		}
+	}
+}//fin footer
 
 // media querys
 @media (min-width: 1200px){
