@@ -28,7 +28,6 @@ body{
 	  color: $negro; 
 	  background: $amarillo;
 	}
-
 	.amarillo{
 		color: $amarillo;
 	}
@@ -38,6 +37,17 @@ body{
 	.azul{
 		color: $azul;
 	}
+	a{
+		text-decoration: none !important;
+		color: $griz;
+
+	}
+	a.active{
+			background-color: $amarillo;
+			color:#0600AF;
+			padding: 0 5px;
+	}
+	
 	.resaltado{
 		background-color:$verde;
 		color: $negro;
@@ -126,6 +136,26 @@ body{
 		    margin-left: 10px;
 	    }
 	}
+	.video-modal{
+		background-color: rgba(0, 0, 0, 0.61);
+		.modal-content {
+		    background-color: transparent;
+		    .modal-body {
+			    padding: 0px;
+			    text-align: center;
+
+			    .close-modal{
+			    	 background: none;
+   					 border: none;
+   					 &:hover{
+   					 	    filter: hue-rotate(61deg);
+   					 }
+			    }
+			}
+		}
+	}
+	
+	
 } //fin body - estilos generales
 
 .navegacion {
@@ -161,8 +191,8 @@ section.warning {
     margin-top: 10em;
     background-image: url(../img/negro-bg.svg),url(../img/negro-bg2.svg);
     background-position: center left,48vw 1vh;
-    -webkit-background-size: 59% 58%,96% 89%;
-    background-size: 59% 58%,96% 89%;
+    -webkit-background-size: 70% 55%,96% 89%;
+    background-size: 70% 55%,96% 89%;
     background-repeat: no-repeat;
     .negativo{
     	margin-top: -6em;
@@ -215,6 +245,42 @@ section.reel{
 	}
 
 } //fin reel
+
+section.hace{
+	background-color: #0600AF;
+
+	.col-central{
+		border-left:4px double;
+		border-right:4px double;
+	}
+	fieldset {
+	    border: 1px solid ;
+	    background: none ;
+	    legend{
+	    	color: $amarillo;
+	    	font-size: 1.3em;
+	    	    width: 190px;
+	    }
+	    
+	}
+	.proyecto {
+		    background-image: url(../img/img-ventana.png);
+		    background-size: 100% 100%;
+		    max-width: 330px;
+    		width: 330px;
+
+		    .head{
+		    	height: 39px;
+		    	
+		    }
+		    .foot{
+		    	padding-top: 12px;
+			    height: 54px;
+			    
+			    font-size: 1.15em;
+		    }
+		}
+}
 
 // media querys
 @media (min-width: 1200px){
