@@ -44,7 +44,7 @@ body{
 	}
 	a.active{
 			background-color: $amarillo;
-			color:#0600AF;
+			color:#0600AF !important;
 			padding: 0 5px;
 	}
 	
@@ -63,6 +63,19 @@ body{
 
     	.progress-bar {
 		    background-color: $griz;
+		    animation-duration: 3s;
+  			animation-name: growUp;
+  			@keyframes growUp {
+			  from {
+			    
+			    width: 0%
+			  }
+
+			  to {
+			    
+			    width: 100%;
+			  }
+			}
 		}
 	}
 	.fixed{
@@ -102,6 +115,9 @@ body{
 		    text-align: center;
 		    width: 20%;
 		}
+	}
+	span.arrow {
+	    font-size: 1.4em;
 	}
 	.nombre-team{
 		left: -25%;
@@ -207,6 +223,11 @@ body{
 .navegacion {
 	border:2px solid;
 	border-color: $griz;
+	a{
+		&:hover{
+			color: $griz;
+		}
+	}
 
 	.tabl{
 		
@@ -219,9 +240,23 @@ body{
 		ul{
 			padding: 0px;
     		list-style: none;
+
+    		a{
+    			color: $griz;
+    			&:hover{
+    				color:$negro;
+    				background-color:$amarillo;
+    				padding: 0 3px;
+    			}
+    		}
 		}
 		.redes{
 			margin-top: 4%;
+			a{
+				&:hover{
+					background-color:$negro;
+				}
+			}
 			img {
 			    max-height: 25px;
 			    padding: 0 4px;
@@ -375,6 +410,13 @@ section.hace{
 				height: 200px;
 				width: 100%;
 			}	
+			span.de {
+				input{
+				  animation-duration: 3s;
+				  animation-delay: 2s;
+				  animation-iteration-count: infinite;
+				}
+			}
 			.mensaje{
 				padding-left:15px;
 				.titulo{
@@ -402,6 +444,7 @@ section.hace{
 footer{
 	background-color:#fff;
 	color: $black;
+	
 	ul.redes{
 	 	li {
 	 		text-align: center;
