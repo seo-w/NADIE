@@ -19,6 +19,9 @@ font-weight: normal;
 src: url('../fonts/FSEX300.woff') format('woff'),
 	 url('../fonts/FSEX300.woff')  format('truetype');
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
 	font-family: 'fixedsys';
 	background-color: $negro;
