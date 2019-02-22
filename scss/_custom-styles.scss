@@ -243,6 +243,7 @@ body{
 
     		a{
     			color: $griz;
+    			transition: all 0.3s ease-in-out;
     			&:hover{
     				color:$negro;
     				background-color:$amarillo;
