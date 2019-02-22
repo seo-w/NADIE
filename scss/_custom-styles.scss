@@ -391,6 +391,75 @@ footer{
 	}
 }//fin footer
 
+
+.modal-proyectos {
+	.modal-content {
+		border-radius:0px;
+		border: 1px solid;
+	    background-color: $negro;
+
+	    .modal-header {
+		    border: 1px solid;
+		    border-radius: 0px;
+		}
+		.modal-body{
+			border: 1px solid;
+
+			.pie {
+			    width: 100%;
+			    hr {
+				    width: 90%;
+				    border: 1px dashed;
+				    float: left;
+				    margin-right: 10px;
+				}
+				input[type="button"] {
+					&:hover{
+					    color: $green;
+					}
+				}
+			}
+			p.dashed {
+			    border-bottom: 1px dashed;
+			    padding-bottom: 5px;
+			    span{
+			    	color: $cafe;
+			    }
+			}
+			.content{
+				p{
+					color: $cafe;
+					span{
+						color: #fff;
+					}
+				}
+			}
+			blockquote {
+			    font-size: 1.2em;
+
+			    span{
+			    	padding: 0px 3px 0 1px;
+				    background-color: $amarillo;
+				    margin-right: 10px;
+				    height: 52px;
+				    display: inline-block;
+				    float: left;
+				    color: #000;
+			    }	
+			}
+			input[type="button"] {
+				color: $cafe;
+				background: none;
+				border:none;
+					&:hover{
+					    color: $green;
+					}
+				}
+		}
+	}
+	
+}
+
 // media querys
 @media (min-width: 1200px){
 	.container-fluid {
