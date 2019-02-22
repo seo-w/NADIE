@@ -65,6 +65,30 @@ body{
 		    background-color: $griz;
 		}
 	}
+	.fixed{
+		background-color:$negro;
+		display: block !important;
+		position: fixed;
+	    width: 100%;
+	    max-width: 1520px;
+	    top: 0;
+	    z-index: 100;
+	    transition: all 1s ease-in-out;
+	}
+	.nav-fixed{
+		/*background-color:$negro;*/
+		display: none;
+		transition: all 1s ease-in-out;
+
+		.menu{
+			ul{
+				display: inline-flex;
+				li{
+					margin:0 10px;
+				}
+			}
+		}
+	}
 	fieldset {
 	    border-top: 2px dashed;
 	    border-bottom: 2px dashed;
