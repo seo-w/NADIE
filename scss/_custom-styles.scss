@@ -395,6 +395,18 @@ section.hace{
 	    		    height: 47px;
 	    		}
 		    }
+
+		    
+	}
+	.proyectos{
+		a{ 
+
+			@media screen and (min-width: 1200px){
+			    &:nth-child(3n-1) {
+				    margin: 0 25px !important;
+				}
+			}
+		}
 	}
 	form {
 	    border: 1px solid;
@@ -434,6 +446,9 @@ section.hace{
 				    border: 1px dashed;
 				    float: left;
 				    margin-right: 10px;
+				    @media screen and (max-width: 1199px){
+				    	display: none;
+				    }
 				}
 				input[type="button"] {
 					&:hover{
