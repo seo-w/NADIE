@@ -24,9 +24,9 @@
                   <div class="row">
                     <div class="col">
                         <ul class="">
-                            <li><a href="#quees" class="active">C:\Que es nadie</a></li>
-                            <li><a href="#nosotros">C:\Nosotros somos Nadie</a></li>
-                            <li><a href="#hace">C:\Lo que Nadie hace</a></li>
+                            <li><a href="#quees" class="active" id="nadietype">C:\Que es nadie</a></li>
+                            <li><a href="#nosotros" id="nadietype" >C:\Nosotros somos Nadie</a></li>
+                            <li><a href="#hace" id="nadietype">C:\Lo que Nadie hace</a></li>
                         </ul>
                     </div>
                     <div class="col  text-center">
@@ -51,8 +51,8 @@
                         <ul class="pt-1">
                           <li><a href="">C:\>NADIE</a></li>
                             <li><a href="#quees" class="active">C:\Que es nadie</a></li>
-                            <li><a href="#nosotros">C:\Nosotros somos Nadie</a></li>
-                            <li><a href="#hace">C:\Lo que Nadie hace</a></li>
+                            <li><a href="#nosotros" >C:\Nosotros somos Nadie</a></li>
+                            <li><a href="#hace" >C:\Lo que Nadie hace</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-5  text-center">
@@ -101,7 +101,7 @@
     <section class="container ">
         <div class="row mt-3">
             <div id="quees" class="col-lg-12 text-center mt-5 mb-5">
-                <img src="img/nadie-trama.png" class="img-fluid wow flash">
+                <img src="img/nadie-trama.png" class="img-fluid wow fadeIn slower delay-2s">
             </div>
             <div  class=" row  mt-4 mx-2 mx-md-5">
                 <div class="col-lg-8 mx-auto">
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-lg-7  mx-auto">
                     <div id="nosotros" class="progress p-1 mt-5 ">
-                        <div class="progress-bar wow" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar wow delay-2s" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -125,6 +125,7 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="row">
                                 <div class="col-lg-6 mt-3">
+                                  
                                     <p class="mt-5 ml-4 pr-1"><span class="resaltado" id="nadietype">Eddie Fitte</span> Escritor, periodista y productor
                                         audiovisual nacido en la Ciudad de Buenos
                                         Aires en 1987.</p>
@@ -134,16 +135,22 @@
                                         productor para el Diario Clarín y Canal 13
                                         (eltrece/ Todo Noticias).</p>
                                     <p><span class="arrow">&#8650;</span></p>
+
+                                    <a href="linkedin.com">
+
                                     <p class="imagen">
                                         
                                         <img alt="Eddie Fitte" class="somos img-fluid" height="425" onmouseout="this.src='img/img-Eddie-Fitte-grises.png';" onmouseover="this.src='img/img-Eddie-Fitte.png';" src="img/img-Eddie-Fitte-grises.png" />
                                     </p>
+                                    </a>
                                     <span class="nombre-team">
-                                            <hr> Productor General <a class="azul" href="#">//Eddie Fitte</a></span>
+                                            <hr> Productor General <a class="azul" href="linkedin.com">//Eddie Fitte</a></span>
+                                    <a href="linkedin.com">
                                     <p class=" ">
                                         <img alt="Eddie Fitte" class="somos img-fluid " height="425" onmouseout="this.src='img/img-Fernando-Mántaras-grises.png';" onmouseover="this.src='img/img-Fernando-Mántaras.png';" src="img/img-Fernando-Mántaras-grises.png" /></p>
+                                      </a>
                                     <span class="nombre-team2">
-                                            <hr> Productor General <a class="azul" href="#">//Eddie Fitte</a></span>
+                                            <hr> Productor General <a class="azul" href="linkedin.com">//Eddie Fitte</a></span>
                                     <div class="d-inline-block">
                                       <p class=" ml-4 pr-1"><span class="resaltado" id="nadietype">Fernando Mántaras</span> Diseñador de imagen y sonido de la universidad de buenos aires.</p>
                                       <p class="ml-4 pr-1">Trabajó muchos años como camarógrafo y director de fotografía para
@@ -161,11 +168,13 @@
                                         </p>
                                         <p class="ml-4">Posteriormente fue coordinadora de Marketing del grupo de radios de Metro, Blue y Rock and Pop, para luego tomar el cargo de Jefe de Marketing de Metro y Blue.</p>
                                         <p><img src="img/ico-flechadoble.svg"></p>
+                                        <a href="linkedin.com">
                                         <p class="imagen">
                                             <img alt="Josefina Hassa" class="somos img-fluid" height="425" onmouseout="this.src='img/img-Josefina-Hassan-grises.png';" onmouseover="this.src='img/img-Josefina-Hassan.png';" src="img/img-Josefina-Hassan-grises.png" />
 
                                         </p>
-                                        <span class="nombre-team3">Productor General <a class="azul" href="#">//Josefina Hassan</a><hr class="hr"></span>
+                                        </a>
+                                        <span class="nombre-team3">Productor General <a class="azul" href="linkedin.com">//Josefina Hassan</a><hr class="hr"></span>
                                         <p><span class="arrow">&#8648;</span></p>
                                     </div>
                                 </div>
@@ -187,7 +196,7 @@
             </div>
           </a>
           <div class=" video-bar mx-4 mt-4">
-            <p class="progres mt-n2 mx-auto"><img class="float-left img-fluid" src="img/bot-reel.png"><img class=" float-right wow flipInX" src="img/ico-vimeo.png"></p>
+            <p class="progres mt-n2 mx-auto"><img class="float-left img-fluid" src="img/bot-reel.png"><a href="www.vimeo.com"><img class=" float-right wow flipInX" src="img/ico-vimeo.png"></a></p>
             <br>
           </div>
         </div>
@@ -271,15 +280,15 @@
             <div class="cuerpo px-4 py-2">
               <div class="row">
                 <div class="col-lg-6">
-                  <p class="border-bottom pb-1">De >: <span class="de"><input type="text" name="" placeholder="Ramiro Montenegro" class="wow flash"></span> </p>
+                  <p class="border-bottom pb-1">De >: <span class="de"><input type="text" name="" placeholder="Nombre y Apellido"" class="wow flash"></span> </p>
                 </div>
                 <div class="col-lg-6">
-                  <p class="border-bottom pb-1">e-mail >: <span class="de"><input type="text" name="" placeholder="ramiromentenegro@gmail.com"></span>
+                  <p class="border-bottom pb-1">e-mail >: <span class="de"><input type="text" name="" placeholder="email@email.com"></span>
                  </p></div>
                  <div class="col-lg-12">
                      <div class="row">
                        <div class="mensaje"><span class="titulo">Mensaje >: </span></div>
-                       <div class="col-lg-10"><textarea placeholder="Lorem ipsum....."></textarea></div>
+                       <div class="col-lg-10"><textarea placeholder="Decile a Nadie que..."></textarea></div>
                      </div>
                    
               </div>
@@ -338,16 +347,16 @@
   <div class="modal-dialog modal-dialog-centered modal-xl modal-proyectos" role="document">
     <div class="modal-content p-1">
       <div class="modal-header p-1">
-        <p class="modal-title pl-4" id="exampleModalLongTitle ">// Producción de contenido original de no ficción</p>
+        <p class="modal-title pl-4 pt-1" id="exampleModalLongTitle ">// Producción de contenido original de no ficción</p>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><img src="img/ico-cerrar.png"></span>
         </button>
       </div>
       <div class="modal-body mt-1 p-1">
-        <div class="row px-4">
-          <div class="col "><p class="dashed">Proyecto >: <span>Nombre del proyecto</span></p>
+        <div class="row px-4 pt-3">
+          <div class="col "><p class="dashed pb-3">Proyecto >: <span>Nombre del proyecto</span></p>
           </div>
-          <div class="col"><p class="dashed">Cliente >: <span>Nombre del cliente</span></p></div>
+          <div class="col"><p class="dashed pb-3">Cliente >: <span>Nombre del cliente</span></p></div>
           <div class="col-lg-12 content"><p><span>Detalle del proyecto >: </span>sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr</p>
             <blockquote><span>&#10084;</span>Vestibulum tincidunt placerat magna in sodales. Orci varius natoque penatibus
  et magnis dis parturient montes, nascetur ridiculus mus. Proin id purus non.</blockquote>
@@ -379,7 +388,7 @@
     <div class="modal-content">
       
       <div class="modal-body">
-        <div style="padding:42.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256762968?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:42.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256762968?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         <button type="button" class="btn btn-secondary close-modal mt-4" data-dismiss="modal"><img src="img/bot-saltar-intro01.png"></button>
       </div>
       
@@ -399,7 +408,7 @@
         jQuery(document).ready(function() {
             new TypeIt('#nadietype', {
 
-                speed: 50,
+                speed: 80,
                 breakLines: false,
                 waitUntilVisible: true
             }).go();

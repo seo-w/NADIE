@@ -66,7 +66,7 @@ body{
 
     	.progress-bar {
 		    background-color: $griz;
-		    animation-duration: 3s;
+		    animation-duration: 5s;
   			animation-name: growUp;
   			@keyframes growUp {
 			  from {
@@ -251,6 +251,9 @@ body{
     				color:$negro;
     				background-color:$amarillo;
     				padding: 0 3px;
+    				img{transition: all 0.7s ease-in-out;
+    					    transform: scale(1.5);
+    				}
     			}
     		}
 		}
