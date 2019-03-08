@@ -25,8 +25,8 @@
                     <div class="col-md-6 px-0 px-lg-2">
                         <ul class="">
                             <li><a href="#quees" class="active" id="nadietype">C:\Que es nadie</a></li>
-                            <li><a href="#nosotros" id="nadietype" >C:\Nosotros somos Nadie</a></li>
-                            <li><a href="#hace" id="nadietype">C:\Lo que Nadie hace</a></li>
+                            <li><a href="#nosotros" id="nadietype2" >C:\Nosotros somos Nadie</a></li>
+                            <li><a href="#hace" id="nadietype3">C:\Lo que Nadie hace</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6  text-center">
@@ -105,7 +105,7 @@
             </div>
             <div  class=" row  mt-4 mx-2 mx-md-5">
                 <div class="col-lg-8 mx-auto">
-                    <p class="amarillo" id="nadietype">C:\Que es nadie</p>
+                    <p class="amarillo" id="nadietype4">C:\Que es nadie</p>
                     <p class="">NADIE es una productora audiovisual de contenidos de no ficción situada en la Ciudad de Buenos Aires.<br> Realizadora de contenidos originales, las producciones de NADIE tienen como objetivo perseguir y llegar a las nuevas audiencias digitales diversificadas.<br> Con la consigna de profundizar la especificidad de cada producción en relación al público al que se destine, NADIE busca dejar atrás los viejos vicios de las formas tradicionales para adecuarse a las nuevas formas de realización y consumo.</p>
                 </div>
                 <div class="col-lg-7  mx-auto">
@@ -196,7 +196,7 @@
         <div class="recuadro text-center p-1">
           
           <div class="titulo mt-n4"><img src="img/titulo-reel-de-nadie.png"></div>
-          <a href="" data-toggle="modal" data-target="#exampleModalLong">
+          <a id="vid-play" href="" data-toggle="modal" data-target="#exampleModalLong">
             <div class="video p-4">
               <img class="img-fluid wow fadeIn slower" src="img/video-over.jpg">
             </div>
@@ -371,7 +371,7 @@
   
           <img class="divider"><img class="img-fluid" src="img/textura-03.png"></img>
           <div class="col-lg-10 mx-auto my-4">
-            <div style="padding:42.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256762968?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:42.5% 0 0 0;position:relative;"><iframe  src="https://player.vimeo.com/video/256762968?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
           </div>
 
@@ -394,7 +394,7 @@
     <div class="modal-content">
       
       <div class="modal-body">
-        <div style="padding:42.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256762968?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:42.5% 0 0 0;position:relative;"><iframe id="vimeo-vid" src="https://player.vimeo.com/video/256762968?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         <button type="button" class="btn btn-secondary close-modal mt-4" data-dismiss="modal"><img src="img/bot-saltar-intro01.png"></button>
       </div>
       
@@ -407,11 +407,21 @@
         <script src="https://code.jquery.com/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"  crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/typeit/dist/typeit.min.js" />
         </script>
         <script src="js/wow.min.js"></script>
         <script type="text/javascript">
         jQuery(document).ready(function() {
+
+            $( "#vid-play" ).click(function() {
+              jQuery("#vimeo-vid").vimeo("play");
+            });
+            
+            $( ".close-modal" ).click(function() {
+              jQuery("#vimeo-vid").vimeo("pause");
+            });
+
             $('.navegacion .menu ul a').click(function(){
                 $('li a').removeClass("active");
                 $(this).addClass("active");
@@ -425,6 +435,31 @@
             }).go();
 
             new WOW().init();
+            new TypeIt('#nadietype2', {
+                startDelay: 2000,
+                speed: 80,
+                breakLines: false,
+                waitUntilVisible: true
+            }).go();
+
+            new WOW().init();
+            new TypeIt('#nadietype3', {
+                startDelay: 4000,
+                speed: 80,
+                breakLines: false,
+                waitUntilVisible: true
+            }).go();
+
+            new WOW().init();
+            new TypeIt('#nadietype4', {
+                startDelay: 6000,
+                speed: 80,
+                breakLines: false,
+                waitUntilVisible: true
+            }).go();
+
+            new WOW().init();
+
 
 
             $(window).bind('scroll', function () {
